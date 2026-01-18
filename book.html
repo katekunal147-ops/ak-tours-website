@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Cab | AK Tours & Travels</title>
+</head>
+<body>
+
+<h1>Book a Cab</h1>
+
+<a href="index.html">← Back to Home</a>
+
+<hr>
+
+<label>Pickup Location</label><br>
+<input type="text" id="pickup"><br><br>
+
+<label>Drop Location</label><br>
+<input type="text" id="drop"><br><br>
+
+<label>Travel Date</label><br>
+<input type="date" id="date"><br><br>
+
+<label>Car Type</label><br>
+<select id="car">
+    <option>Sedan</option>
+    <option>SUV</option>
+    <option>Hatchback</option>
+</select>
+
+<br><br>
+
+<button onclick="sendWhatsApp()">Book Now</button>
+
+<script>
+function sendWhatsApp() {
+    var pickup = document.getElementById("pickup").value;
+    var drop = document.getElementById("drop").value;
+    var date = document.getElementById("date").value;
+    var car = document.getElementById("car").value;
+
+    if (pickup === "" || drop === "" || date === "") {
+        alert("Please fill all details");
+        return;
+    }
+
+    var message =
+        "Hello AK Tours & Travels\n" +
+        "Pickup: " + pickup + "\n" +
+        "Drop: " + drop + "\n" +
+        "Date: " + date + "\n" +
+        "Car Type: " + car;
+
+    var phone = "917203916656"; // your number
+
+    var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

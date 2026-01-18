@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact | AK Tours & Travels</title>
+</head>
+<body>
+
+<h1>AK Tours & Travels</h1>
+<p>Safe and Smooth Ride Till Destiny</p>
+
+<hr>
+<a href="index.html">Home</a> |
+<a href="book.html">Book Cab</a> |
+<a href="packages.html">Packages</a> |
+<a href="corporate.html">Corporate</a> |
+<a href="contact.html">Contact</a>
+<hr>
+
+<h2>Contact Us</h2>
+
+<p>📍 Pune, Maharashtra</p>
+<p>📞 Phone / WhatsApp: <b>+91 72039 16656</b></p>
+
+<button onclick="contact()">Chat on WhatsApp</button>
+
+<script>
+function contact() {
+    var msg =
+        "Hello AK Tours & Travels\n" +
+        "I want to know more about your services.";
+
+    window.open(
+        "https://wa.me/917203916656?text=" + encodeURIComponent(msg),
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>

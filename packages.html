@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Packages | AK Tours & Travels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Tour Packages</h1>
+
+<div class="container">
+
+<a href="index.html">← Back to Home</a>
+
+<hr>
+
+<h3>Pune → Lonavala</h3>
+<p>1 Day Trip | AC Cab | Family Friendly</p>
+<button onclick="bookPackage('Pune to Lonavala')">Book Now</button>
+
+<hr>
+
+<h3>Pune → Mahabaleshwar</h3>
+<p>2 Days / 1 Night | AC Cab | Hill Station</p>
+<button onclick="bookPackage('Pune to Mahabaleshwar')">Book Now</button>
+
+<hr>
+
+<h3>Pune → Shirdi</h3>
+<p>1 Day / 2 Days | Religious Tour</p>
+<button onclick="bookPackage('Pune to Shirdi')">Book Now</button>
+
+</div>
+
+<script>
+function bookPackage(place) {
+    var message = 
+        "Hello AK Tours & Travels\n" +
+        "I want to book package:\n" +
+        place;
+
+    window.open(
+        "https://wa.me/917203916656?text=" + encodeURIComponent(message),
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>

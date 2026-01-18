@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corporate Travel | AK Tours & Travels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Office Pickup & Corporate Travel</h1>
+
+<div class="container">
+
+<a href="index.html">← Back to Home</a>
+
+<hr>
+
+<h3>Daily Office Pickup & Drop</h3>
+<p>
+We provide safe and punctual daily pickup and drop services
+for company employees in Pune.
+</p>
+
+<ul>
+    <li>Fixed monthly charges</li>
+    <li>Experienced drivers</li>
+    <li>Clean & well-maintained vehicles</li>
+</ul>
+
+<button onclick="corporateBooking('Daily Office Pickup')">
+Request Quote
+</button>
+
+<hr>
+
+<h3>Corporate & Business Travel</h3>
+<p>
+Reliable cab services for meetings, airport transfers,
+and official travel.
+</p>
+
+<ul>
+    <li>Hourly / daily basis</li>
+    <li>Dedicated vehicles</li>
+    <li>Professional service</li>
+</ul>
+
+<button onclick="corporateBooking('Corporate Travel Service')">
+Request Quote
+</button>
+
+</div>
+
+<script>
+function corporateBooking(service) {
+    var message =
+        "Hello AK Tours & Travels\n" +
+        "I want details for:\n" +
+        service;
+
+    window.open(
+        "https://wa.me/917203916656?text=" + encodeURIComponent(message),
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
